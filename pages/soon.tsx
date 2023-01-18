@@ -18,9 +18,9 @@ const Soon: NextPage = () => {
       <div className='absolute w-[446px] h-[446px] border-t-2 border-white rounded-full ' />
 
       {/* Main */}
-      <div className='flex flex-col justify-center items-center relative h-fit text-white'>
+      <div className='flex flex-col justify-center items-center relative h-fit text-white text-center'>
         <h1 className='text-8xl tracking-wide font-light'>Comming Soon</h1>
-        <div className='pt-10 font-medium text-xl text-center leading-[32px] tracking-widest'>
+        <div className='pt-10 font-medium text-xl leading-[32px] tracking-widest'>
           <p>WE ARE STILL BUILDING THIS VIEW</p>
           <p>IN THE MEANTIME, PLEASE STAY IN TOUCH  :)</p>
         </div>
