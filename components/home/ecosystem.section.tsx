@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 const Ecosystem = () => {
   return (
-    <div className="relative flex flex-wrap w-full justify-between">
+    <div className="relative grid grid-cols-2 gap-20 w-full justify-between">
       {/* Main sections */}
-      <p className='bg-blured px-10 py-20 mx-0 text-7xl mt-36 rounded-xl'>
+      <p className='bg-blured py-20 mx-0 text-7xl mt-36 rounded-xl text-center'>
         CENTAURI<br />
         WEB3<br />
         CONSORTIUM<br />
@@ -12,7 +12,7 @@ const Ecosystem = () => {
           ECOSYSTEM
         </span>
       </p>
-      <div className='relative flex flex-wrap p-24 mx-0 justify-center items-center mr-20 bg-blured rounded-xl'>
+      <div className='relative flex flex-wrap p-10 mx-0 justify-center items-center mr-20 bg-blured rounded-xl'>
         {/* Floating sections */}
         <div className="absolute w-[250px] h-[250px] -top-[125px] -left-[125px] bg-blured-floating flex justify-center items-center">
           <Image src={`/icons/metanode-dao.svg`} alt={`metanode dao logo`} width={200} height={200} />
