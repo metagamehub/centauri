@@ -1,8 +1,13 @@
 import Head from 'next/head'
+
+// Components
 import Footer from '../components/footer.component'
+import Greet from '../components/home/greet.component'
+
+// Sections
 import Consortium from '../components/home/consortium.section'
 import CurrentChallenges from '../components/home/currentChallenges.section'
-import Greet from '../components/home/greet.component'
+import JoinUs from '../components/home/joinUs.section'
 import MainGoal from '../components/home/mainGoal.section'
 import WhoAreWe from '../components/home/whoAreWe.section'
 
@@ -55,7 +60,7 @@ export default function Home() {
         {/*  */}
 
         {/* Join Us section */}
-
+        <JoinUs />
       </div >
 
       <Footer />
