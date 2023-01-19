@@ -31,7 +31,7 @@ const Soon: NextPage = () => {
           <SocialIcon imageUrl='/icons/twitter.svg' link='https://twitter.com/MGH_DAO' alt='twitter link' />
           <SocialIcon imageUrl='/icons/telegram.svg' link='https://t.me/metagamehub_dao' alt='telegram link' />
           <SocialIcon imageUrl='/icons/discord.svg' link='https://discord.com/invite/8WJVMDXZwH' alt='discord link' />
-          <SocialIcon imageUrl='/icons/youtube.svg' link='' alt='youtube link' />
+          <SocialIcon imageUrl='/icons/youtube.svg' link='https://www.youtube.com/@mgh-metaversedevgroup1493' alt='youtube link' />
           <SocialIcon imageUrl='/icons/ether.svg' link='https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656' alt='etherscan link' />
         </div>
       </div>

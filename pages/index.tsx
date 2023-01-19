@@ -10,6 +10,7 @@ import CurrentChallenges from '../components/home/currentChallenges.section'
 import JoinUs from '../components/home/joinUs.section'
 import MainGoal from '../components/home/mainGoal.section'
 import WhoAreWe from '../components/home/whoAreWe.section'
+import Partners from '../components/home/partners.section'
 
 export default function Home() {
   return (
@@ -29,7 +30,6 @@ export default function Home() {
 
         {/* Who are we section*/}
         <WhoAreWe />
-
         {/* The main goal section*/}
         <MainGoal />
 
@@ -37,10 +37,8 @@ export default function Home() {
         <div className='flex flex-col relative w-full gap-60 justify-center'>
           {/* blue hole */}
           <div className='absolute w-[973px] h-[1206px] bg-[#627BFF] rounded-full -right-[900px] blur-[100px]' />
-
           {/* The centauri consortium section */}
           <Consortium />
-
           {/* Current challenges section */}
           <CurrentChallenges />
         </div>
@@ -49,12 +47,17 @@ export default function Home() {
 
         {/*  */}
 
-        {/*  */}
+        {/* Three holes section */}
         <div>
-          {/*  */}
+          {/* Holes */}
+          <div />
+          <div />
+          <div />
 
           {/*  */}
 
+          {/* Founding Partners */}
+          <Partners />
         </div>
 
         {/*  */}
@@ -62,7 +65,6 @@ export default function Home() {
         {/* Join Us section */}
         <JoinUs />
       </div >
-
       <Footer />
     </div>
   )
