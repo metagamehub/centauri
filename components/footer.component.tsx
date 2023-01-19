@@ -3,7 +3,7 @@ import SocialIcon from './socialIcon.component'
 
 const Footer = () => {
   return (
-    <div className='text-white mb-28'>
+    <div className='text-white my-28'>
       {/* footer */}
       <div className='flex flex-col xl:flex-row justify-between items-center'>
         {/* footer contact */}
