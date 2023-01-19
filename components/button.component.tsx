@@ -5,10 +5,10 @@ interface ButtonProps {
 
 const Button = ({ label, handleClick }: ButtonProps) => {
   return (
-    <div
+    <button
       onClick={() => handleClick()}
       className='bg-[#627BFF] p-9 rounded-full font-medium text-2xl px-20'
-    >{label}</div>
+    >{label}</button>
   )
 }
 

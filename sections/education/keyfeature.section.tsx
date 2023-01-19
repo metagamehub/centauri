@@ -12,12 +12,9 @@ const KeyFeatures = () => {
 
   return (
     <div className='relative flex justify-center items-center bg-blured p-20 gap-20'>
-      <div className='w-10 h-20 bg-white absolute'/>
-      {/* <div className="absolute w-[181px] h-[181px] border-morph rounded-full bottom-10">
-        <div className='relative w-full'>
-          <Image src={`/icons/target-shooting.svg`} alt={`shooting target icon`} width={102} height={102} />
-        </div>
-      </div> */}
+      <div className="absolute w-[181px] h-[181px] bg-blured-floating rounded-full -top-[90px] left-10 flex justify-center items-center">
+        <Image src={`/icons/target-shooting.svg`} alt={`shooting target icon`} width={102} height={102} />
+      </div>
       <h2 className='w-1/2 text-6xl font-medium'>Key features of our seminars include:</h2>
       <ul className='w-1/2 text-2xl font-light list-disc'>
         {featureList.map((feature, index) => <li key={index} className="">{feature}</li>)}

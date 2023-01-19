@@ -4,10 +4,13 @@ import Image from 'next/image'
 
 // Components
 import Footer from '../components/footer.component'
-import KeyFeatures from '../sections/education/keyfeature.section'
 
 // Sections
 import Seminar from '../sections/education/seminars.section'
+import KeyFeatures from '../sections/education/keyfeature.section'
+import Invitation from '../sections/education/invitation.section'
+import NextLevel from '../sections/education/nextLevel.section'
+import Agenda from '../sections/education/agenda.section'
 
 const Education: NextPage = () => {
   return (
@@ -36,11 +39,19 @@ const Education: NextPage = () => {
         </div>
       </div>
 
-      <div className='flex flex-col justify-center items-center gap-20 max-w-[100rem] text-white mx-auto my-16 px-10'>
+      <div className='flex flex-col justify-center items-center gap-32 max-w-[100rem] text-white mx-auto my-16 px-10'>
         {/* Seminars section */}
         <Seminar />
         {/* Key features */}
         <KeyFeatures />
+
+        {/* Join the revolution */}
+        <Invitation />
+        {/* The Next level section */}
+        <NextLevel />
+
+        {/* The Agenda */}
+        <Agenda />
       </div>
       <Footer />
     </div>
