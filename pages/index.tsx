@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Footer from '../components/footer.component'
+import Consortium from '../components/home/consortium.section'
+import CurrentChallenges from '../components/home/currentChallenges.section'
 import Greet from '../components/home/greet.component'
+import MainGoal from '../components/home/mainGoal.section'
+import WhoAreWe from '../components/home/whoAreWe.section'
 
 export default function Home() {
   return (
@@ -13,31 +17,16 @@ export default function Home() {
 
       <Greet />
       <div className='flex flex-col justify-center items-center gap-20 max-w-[100rem] text-white mx-auto my-16 px-10'>
-        {/* Apply for membership */}
+        {/* Apply for membership section*/}
         <div>
 
         </div>
 
-        {/* Who are we */}
-        <div className='w-full grid lg:grid-cols-2 justify-center items-center gap-28'>
-          <div className='relative flex justify-center items-center h-[421px]'>
-            <div className='absolute w-[421px] h-[421px] rounded-full bg-[#F3DE6B] blur-[100px]' />
-            <div className='absolute w-[421px] h-[421px] rounded-full bg-black' />
-            <h2 className='absolute text-[7.25rem] leading-none font-bold w-64 right-20'>WHO ARE WE?</h2>
-          </div>
-          <p className='text-2xl max-w-3xl font-thin leading-relaxed'>The Centauri Web3 Consortium is dedicated to fostering the development and adoption of web3 through the creation of open and transparent standards. Our goal is to build a harmonized and scalable ecosystem with interoperability at its core. We strive to educate, standardize, and enable web3 adoption for businesses and creators alike by developing "The Metanode" hive, a platform that brings together the best of web3 technology and makes it accessible and user-friendly for all. We invite you to join us in shaping the future of the web.</p>
-        </div>
+        {/* Who are we section*/}
+        <WhoAreWe />
 
-        {/* The main goal */}
-        <div className='w-full grid lg:grid-cols-2 justify-center items-center gap-28 my-36'>
-          <div className='w-full flex justify-center items-center'>
-            <h2 className='w-[545px] text-[7.25rem] font-extralight leading-none'>THE MAIN GOAL</h2>
-          </div>
-          <div className='flex flex-col gap-10'>
-            <p className='text-2xl max-w-3xl font-thin leading-none'>The main goal of the Centauri Web3 Consortium is to foster the development and adoption of web3 through the creation of open and transparent standards to build a harmonized and scalable ecosystem with interoperability at its core.</p>
-            <p className='text-2xl max-w-3xl font-thin leading-none'>The Centauri Web3 Consortium is educating, standardizing and enabling web3 adoption for businesses and creators by building “The Metanode” hive.</p>
-          </div>
-        </div>
+        {/* The main goal section*/}
+        <MainGoal />
 
         {/* Blue hole section */}
         <div className='flex flex-col relative w-full gap-60 justify-center'>
@@ -45,66 +34,29 @@ export default function Home() {
           <div className='absolute w-[973px] h-[1206px] bg-[#627BFF] rounded-full -right-[900px] blur-[100px]' />
 
           {/* The centauri consortium section */}
-          <div className='flex flex-col gap-20 backdrop-blur-[82.4px] bg-white bg-opacity-5 px-10 lg:px-[182px] py-32 rounded-md mx-0'>
-            <div className='flex justify-end'>
-              <h2 className='max-w-4xl text-[5.25rem] font-light'>THE CENTAURI WEB3 CONSORTIUM</h2>
-            </div>
-
-            <div className='flex flex-col max-w-2xl text-2xl gap-5'>
-              <div>
-                <h3 className='font-bold'>FOR WHO?:</h3>
-                <p>Businesses and creators</p>
-              </div>
-
-              <div>
-                <h3 className='font-bold'>WHAT:</h3>
-                <p>Educating, Standardizing and Enabling web3 adoption through the first ever true web3 consortium</p>
-              </div>
-
-              <div>
-                <h3 className='font-bold'>HOW:</h3>
-                <p>By Building “The Metanode” - a platform where businesses, creators, investors, government officials and web3 experts come together and co-create, co-govern and co-enable standards for web3 in a gamified and web3 native environment</p>
-              </div>
-            </div>
-
-          </div>
+          <Consortium />
 
           {/* Current challenges section */}
-          <div className='flex flex-col lg:flex-row backdrop-blur-none'>
-            <h2 className='font-bold text-[5.25rem] max-w-2xl'>CURRENT CHALLENGES CENTAURI IS ADDRESSING</h2>
-            <ul className='flex flex-col text-2xl list-disc justify-around'>
-              <li>
-                Siloed and biased web3 education making it hard to establish yourself as a business in a diversified manner
-              </li>
-              <li>
-                Fragmented infrastructure and cannibalism makes it hard to create standards that foster mainstream adoption and to provide and intuitive UX
-              </li>
-              <li>
-                Inefficient and unsustainable execution of web3 activations for businesses and lack of funding thereof
-              </li>
-              <li>
-                → web3 issues we are addressing
-              </li>
-              <li>
-                Many consortiums lack community and cultureF
-              </li>
-              <li>
-                There is an omnipresent issue with the missing web3 nativeness
-              </li>
-              <li>
-                No call to action and limited project executions
-              </li>
-              <li>
-                → consortium issues we are addressing
-              </li>
-            </ul>
-          </div>
+          <CurrentChallenges />
+        </div>
+
+        {/*  */}
+
+        {/*  */}
+
+        {/*  */}
+        <div>
+          {/*  */}
+
+          {/*  */}
 
         </div>
 
+        {/*  */}
+
+        {/* Join Us section */}
+
       </div >
-
-
 
       <Footer />
     </div>
