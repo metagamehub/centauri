@@ -42,7 +42,7 @@ const Partners = () => {
       description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..."'
     },
     {
-      logo: 'detecon',
+      logo: 'inacta',
       description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..."'
     },
     {
@@ -52,7 +52,7 @@ const Partners = () => {
   ]
 
   return (
-    <div className='flex flex-wrap gap-20 backdrop-blur-[82.4px] bg-white bg-opacity-10 px-28 py-32 rounded-xl mx-0 justify-center items-center border-white border-opacity-20 border-l-2 border-t-2'>
+    <div className='flex flex-wrap gap-20 bg-blured px-28 py-32 rounded-xl mx-0 justify-center items-center'>
       <p className='col-span-3 text-5xl font-normal text-center w-full mb-10'>{'Founding Partners'}</p>
       {partners.map((partner, index) => <PartnerCard key={index} logo={partner.logo} description={partner.description} />)}
     </div>

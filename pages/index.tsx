@@ -13,6 +13,7 @@ import WhoAreWe from '../sections/home/whoAreWe.section'
 import Partners from '../sections/home/partners.section'
 import Ecosystem from '../sections/home/ecosystem.section'
 import Membership from '../sections/home/membership.section'
+import Button from '../components/button.component'
 
 export default function Home() {
   return (
@@ -26,8 +27,9 @@ export default function Home() {
       <Greet />
       <div className='flex flex-col justify-center items-center gap-20 max-w-[100rem] text-white mx-auto my-16 px-10'>
         {/* Apply for membership section*/}
-        <div>
-
+        <div className='mb-40 text-center'>
+          <p className='text-5xl font-extralight my-14'>Apply for membership <span className='font-bold'>here</span></p>
+          <Button label='Click here to apply' handleClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdI7VaZN5Yc-6C7dhCw1oELcfU6K60Wg6X1HFD8MkjN97KqNA/viewform', '_blank')} />
         </div>
 
         {/* Who are we section*/}

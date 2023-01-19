@@ -11,7 +11,7 @@ const CurrentChallenges = () => {
   ]
 
   return (
-    <div className='flex flex-col lg:flex-row backdrop-blur-none gap-20'>
+    <div className='flex flex-col lg:flex-row gap-20'>
       <h2 className='font-bold text-[5.25rem] max-w-2xl'>{'CURRENT CHALLENGES CENTAURI IS ADDRESSING'}</h2>
       <ul className='flex flex-col text-2xl list-disc justify-around'>
         {challengesList.map((challenge, index) => <li key={index}>{challenge}</li>)}
