@@ -5,14 +5,14 @@ import Footer from '../components/footer.component'
 import Greet from '../components/home/greet.component'
 
 // Sections
-import Consortium from '../components/home/consortium.section'
-import CurrentChallenges from '../components/home/currentChallenges.section'
-import JoinUs from '../components/home/joinUs.section'
-import MainGoal from '../components/home/mainGoal.section'
-import WhoAreWe from '../components/home/whoAreWe.section'
-import Partners from '../components/home/partners.section'
-import Ecosystem from '../components/home/ecosystem.section'
-import Membership from '../components/home/membership.section'
+import Consortium from '../sections/home/consortium.section'
+import CurrentChallenges from '../sections/home/currentChallenges.section'
+import JoinUs from '../sections/home/joinUs.section'
+import MainGoal from '../sections/home/mainGoal.section'
+import WhoAreWe from '../sections/home/whoAreWe.section'
+import Partners from '../sections/home/partners.section'
+import Ecosystem from '../sections/home/ecosystem.section'
+import Membership from '../sections/home/membership.section'
 
 export default function Home() {
   return (

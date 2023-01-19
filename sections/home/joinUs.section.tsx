@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Button from '../button.component'
+import Button from '../../components/button.component'
 
 const JoinUs = () => {
   return (
