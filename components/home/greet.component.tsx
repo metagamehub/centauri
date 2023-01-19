@@ -17,18 +17,18 @@ const Greet = () => {
 
       {/* Header */}
       <div className='absolute top-8 lg:top-24 text-center'>
-        <p className='text-3xl tracking-[0.35em] font-normal'>CENTAURI WEB3 CONSORTIUM </p>
-        <p className='text-xl tracking-wide font-medium'>Standardizing web3 to unlock its full potential</p>
+        <p className='text-3xl tracking-[0.35em] font-normal'>{'CENTAURI WEB3 CONSORTIUM'}</p>
+        <p className='text-xl tracking-wide font-medium'>{'Standardizing web3 to unlock its full potential'}</p>
       </div>
 
       {/* Main */}
       <div className='flex flex-col justify-center items-center relative h-fit text-center'>
-        <h1 className='text-8xl tracking-wide font-light'>Enter the <br /><span className="font-semibold">METANODE</span></h1>
+        <h1 className='text-8xl tracking-wide font-light'>Enter the <br /><span className="font-semibold">{'METANODE'}</span></h1>
       </div>
 
       {/* Powered by metagamehub */}
       <div className='absolute bottom-8 lg:bottom-24 font-thin'>
-        <p className='text-center text-2xl'>powered by</p>
+        <p className='text-center text-2xl'>{'powered by'}</p>
         <div className='h-20 w-96'>
           <Image src={'/mgh_logo_text.svg'} fill={true} alt={'mgh logo with text'} />
         </div>
