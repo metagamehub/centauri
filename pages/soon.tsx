@@ -6,7 +6,7 @@ import SocialIcon from '../components/socialIcon.component'
 
 const Soon: NextPage = () => {
   return (
-    <div className='flex justify-center items-center w-full h-screen relative bg-[url("/bg.jpg")] bg-cover bg-center bg-no-repeat'>
+    <div className='flex justify-center items-center w-full h-screen relative bg-[url("/bg.png")] bg-cover bg-center bg-no-repeat'>
 
       {/* Corners */}
       <div className='absolute w-12 h-12 top-8 left-8 lg:top-24 lg:left-24 border-t border-l border-white' />

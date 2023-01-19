@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Greet = () => {
   return (
-    <div className="w-full h-screen relative flex justify-center items-center text-white">
+    <div className='w-full h-screen relative flex justify-center items-center text-white bg-[url("/bg.png")] bg-cover bg-center bg-no-repeat'>
       {/* Corners */}
       <div className='absolute w-12 h-12 top-8 left-8 lg:top-24 lg:left-24 border-t border-l border-white' />
       <p className='absolute flex w-fit px-10 h-12 top-8 left-8 lg:top-24 lg:left-24 justify-center items-end tracking-[0.5em] font-semibold'>ABOUT US</p>
@@ -28,7 +28,7 @@ const Greet = () => {
 
       {/* Powered by metagamehub */}
       <div className='absolute bottom-8 lg:bottom-24 font-thin'>
-        <p className='text-center'>powered by</p>
+        <p className='text-center text-2xl'>powered by</p>
         <div className='h-20 w-96'>
           <Image src={'/mgh_logo_text.svg'} fill={true} alt={'mgh logo with text'} />
         </div>
