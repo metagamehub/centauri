@@ -19,7 +19,7 @@ const Soon: NextPage = () => {
 
       {/* Main */}
       <div className='flex flex-col justify-center items-center relative h-fit text-white text-center'>
-        <h1 className='text-8xl tracking-wide font-light'>Comming Soon</h1>
+        <h1 className='text-8xl tracking-wide font-extralight'>Comming Soon</h1>
         <div className='pt-10 font-medium text-xl leading-[32px] tracking-widest'>
           <p>WE ARE STILL BUILDING THIS VIEW</p>
           <p>IN THE MEANTIME, PLEASE STAY IN TOUCH  :)</p>
@@ -38,7 +38,7 @@ const Soon: NextPage = () => {
 
       {/* Powered by metagamehub */}
       <div className='absolute bottom-24 text-white font-thin'>
-        <p className='text-center'>powered by</p>
+        <p className='text-center text-2xl'>powered by</p>
         <div className='h-20 w-96'>
           <Image src={'/mgh_logo_text.svg'} fill={true} alt={'mgh logo with text'} />
         </div>
