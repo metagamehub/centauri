@@ -11,6 +11,7 @@ import JoinUs from '../components/home/joinUs.section'
 import MainGoal from '../components/home/mainGoal.section'
 import WhoAreWe from '../components/home/whoAreWe.section'
 import Partners from '../components/home/partners.section'
+import Ecosystem from '../components/home/ecosystem.section'
 
 export default function Home() {
   return (
@@ -48,14 +49,14 @@ export default function Home() {
         {/*  */}
 
         {/* Three holes section */}
-        <div>
+        <div className='relative flex flex-col gap-40 my-40 justify-center items-center'>
           {/* Holes */}
-          <div />
-          <div />
-          <div />
+          <div className='absolute bg-[#C840A9] rounded-full w-[900px] h-[900px] blur-[100px] top-[200px]'/>
+          <div className='absolute bg-[#627BFF] rounded-full w-[743px] h-[743px] blur-[100px] -left-[400px]'/>
+          <div className='absolute bg-[#F3DE6B] rounded-full w-[400px] h-[400px] blur-[200px] -right-[200px] top-0'/>
 
-          {/*  */}
-
+          {/* Ecosystem */}
+          <Ecosystem />
           {/* Founding Partners */}
           <Partners />
         </div>

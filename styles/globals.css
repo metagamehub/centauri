@@ -15,3 +15,48 @@ body {
   background-color: #110128;
   scroll-behavior: smooth;
 }
+
+@layer base {
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .hidescroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hidescroll {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  /* Neomorphism Box Shadows */
+
+  .bg-blured {
+    background: rgba(255, 255, 255, 0.16);
+    border: 0.872231px solid rgba(255, 255, 255, 0.08);
+    box-shadow: inset 3.48892px 3.48892px 3.48892px rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(30.1285px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 16.7497px;
+  }
+
+  .border-morph {
+    /* MORPH */
+
+    box-shadow: inset 2.80733px 2.80733px 2.80733px rgba(255, 255, 255, 0.11);
+    /* Note: backdrop-filter has minimal browser support */
+  }
+
+  .bg-blured-floating {
+    background: rgba(255, 255, 255, 0.16);
+    border: 0.872231px solid rgba(255, 255, 255, 0.08);
+    box-shadow: inset 3.48892px 3.48892px 3.48892px rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(0.1285px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 56.42px;
+  }
+}

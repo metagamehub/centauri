@@ -5,6 +5,49 @@ import Image from 'next/image'
 import SocialIcon from '../components/socialIcon.component'
 
 const Soon: NextPage = () => {
+  const socialIconsData = [
+    {
+      imageUrl: '/icons/medium.svg',
+      link: 'https://metagamehub.medium.com/',
+      alt: 'medium link'
+    },
+    {
+      imageUrl: '/icons/instagram.svg',
+      link: 'https://www.instagram.com/metagamehub_dao/',
+      alt: 'instagram link'
+    },
+    {
+      imageUrl: '/icons/linkedin.svg',
+      link: 'https://www.linkedin.com/company/metagamehub-dao/',
+      alt: 'linkedin link'
+    },
+    {
+      imageUrl: '/icons/twitter.svg',
+      link: 'https://twitter.com/MGH_DAO',
+      alt: 'twitter link'
+    },
+    {
+      imageUrl: '/icons/telegram.svg',
+      link: 'https://t.me/metagamehub_dao',
+      alt: 'telegram link'
+    },
+    {
+      imageUrl: '/icons/discord.svg',
+      link: 'https://discord.com/invite/8WJVMDXZwH',
+      alt: 'discord link'
+    },
+    {
+      imageUrl: '/icons/youtube.svg',
+      link: 'https://www.youtube.com/@mgh-metaversedevgroup1493',
+      alt: 'youtube link'
+    },
+    {
+      imageUrl: '/icons/ether.svg',
+      link: 'https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656',
+      alt: 'etherscan link'
+    },
+  ]
+
   return (
     <div className='flex justify-center items-center w-full h-screen relative bg-[url("/bg.png")] bg-cover bg-center bg-no-repeat'>
 
@@ -25,14 +68,7 @@ const Soon: NextPage = () => {
           <p>IN THE MEANTIME, PLEASE STAY IN TOUCH  :)</p>
         </div>
         <div className='flex gap-2 lg:gap-8 pt-12'>
-          <SocialIcon imageUrl='/icons/medium.svg' link='https://metagamehub.medium.com/' alt='medium link' />
-          <SocialIcon imageUrl='/icons/instagram.svg' link='https://www.instagram.com/metagamehub_dao/' alt='instagram link' />
-          <SocialIcon imageUrl='/icons/linkedin.svg' link='https://www.linkedin.com/company/metagamehub-dao/' alt='linkedin link' />
-          <SocialIcon imageUrl='/icons/twitter.svg' link='https://twitter.com/MGH_DAO' alt='twitter link' />
-          <SocialIcon imageUrl='/icons/telegram.svg' link='https://t.me/metagamehub_dao' alt='telegram link' />
-          <SocialIcon imageUrl='/icons/discord.svg' link='https://discord.com/invite/8WJVMDXZwH' alt='discord link' />
-          <SocialIcon imageUrl='/icons/youtube.svg' link='https://www.youtube.com/@mgh-metaversedevgroup1493' alt='youtube link' />
-          <SocialIcon imageUrl='/icons/ether.svg' link='https://etherscan.io/token/0x8765b1a0eb57ca49be7eacd35b24a574d0203656' alt='etherscan link' />
+          {socialIconsData.map((icon, index) => <SocialIcon key={index} imageUrl={icon.imageUrl} link={icon.link} alt={icon.alt} />)}
         </div>
       </div>
 
