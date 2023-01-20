@@ -8,7 +8,7 @@ const NextLevel = () => {
   ]
 
   return (
-    <div className='flex flex-col 2xl:flex-row justify-center bg-blured p-20 gap-20 min-w-[500px]'>
+    <div className='flex flex-col 2xl:flex-row justify-center p-20 gap-20 min-w-[500px] gm-soft gm-border'>
       <div className="flex flex-col 2xl:w-1/2">
         <h2 className="font-bold text-6xl sm:text-[118px] leading-none mb-10">THE NEXT<br />LEVEL,</h2>
         <p className="font-normal text-3xl sm:text-5xl">Of Immersion<br />and interactivity </p>

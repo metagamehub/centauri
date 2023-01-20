@@ -52,7 +52,7 @@ const Partners = () => {
   ]
 
   return (
-    <div className='flex flex-wrap gap-20 bg-blured px-28 py-32 rounded-xl mx-0 justify-center items-center'>
+    <div className='flex flex-wrap gap-20 px-28 py-32 rounded-xl mx-0 justify-center items-center gm-medium gm-border'>
       <p className='col-span-3 text-5xl font-normal text-center w-full mb-10'>{'Founding Partners'}</p>
       {partners.map((partner, index) => <PartnerCard key={index} logo={partner.logo} description={partner.description} />)}
     </div>

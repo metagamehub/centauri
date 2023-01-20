@@ -12,7 +12,7 @@ const CircleCard = ({ title, children }: { title: string, children: React.ReactN
 const Invitation = () => {
   return (
     <div className='relative flex flex-col xl:flex-row justify-around items-center gap-20'>
-      <div className="xl:w-2/3 flex flex-col justify-center xl:items-end text-center ">
+      <div className="xl:w-2/3 flex flex-col justify-center text-center xl:text-left ">
         <h2 className='text-5xl sm:text-6xl lg:text-8xl 2xl:text-[115px] font-bold leading-none'>JOIN THE REVOLUTION,</h2>
         <p className="text-2xl sm:text-4xl 2xl:text-5xl my-8">Attend our seminars and transform the future.</p>
         <p className="text-base sm:text-xl 2xl:text-2xl font-light">Don't miss this exclusive opportunity to master the metaverse! Register now on our website and follow us on social media (link to twitter, linkedin, discord) for the latest updates on upcoming seminar dates, topics, and keynote speakers.</p>

@@ -2,7 +2,7 @@ import Button from "../../components/button.component"
 
 const AgendaCard = ({ index, item }: { index: number, item: string }) => {
   return (
-    <div className="w-96 h-64 bg-blured text-3xl font-medium flex items-center justify-center">
+    <div className="w-96 h-64 text-3xl font-medium flex items-center justify-center gm-medium gm-border">
       {`${index}. ${item}`}
     </div>
   )

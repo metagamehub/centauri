@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Cards = ({ label, imageUrl }: { label: string, imageUrl: string }) => {
   return (
     <div className="w-[273px] px-2 py-5 bg-white bg-opacity-10 rounded-xl border-t-4 border-l-4 border-white border-opacity-10">
-      <div className="relative w-full bg-blured border-t-4 border-l-4 border-white border-opacity-10">
+      <div className="relative w-full border-t-4 border-l-4 border-white border-opacity-10">
         <Image src={`/test/${imageUrl}.svg`} alt={label} width={255} height={243} />
         <p className="text-center text-2xl h-16 flex justify-center items-center">{label}</p>
       </div>
