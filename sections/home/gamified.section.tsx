@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react"
 
 const Circle = ({ label }: { label: string }) => {
-  return <div className="w-[221px] h-[221px] flex justify-center items-center text-center font-bold text-3xl rounded-full bg-white bg-opacity-5 border-t-2 border-l-2 border-white border-opacity-20">{label}</div>
+  return <div className="w-[221px] h-[221px] flex justify-center items-center text-center font-bold text-3xl rounded-full bg-white bg-opacity-5 border-t-4 border-l-4 border-white border-opacity-10">{label}</div>
 }
 
 const Rectangle = ({ label, hfull }: { label: string, hfull?: boolean }) => {
   return (
     <div className={`w-full ${hfull ? 'h-[221px]' : ''} xl:h-[221px] flex justify-center items-center`}>
-      <div className="w-full h-full xl:h-fit flex justify-center items-center text-center font-bold text-3xl rounded-xl bg-white bg-opacity-5 border-t-2 border-l-2 border-white border-opacity-20 p-5">{label}</div>
+      <div className="w-full h-full xl:h-fit flex justify-center items-center text-center font-bold text-3xl rounded-xl bg-white bg-opacity-5 border-t-4 border-l-4 border-white border-opacity-10 p-5">{label}</div>
     </div>
   )
 }
@@ -48,7 +48,7 @@ const Gamified = () => {
   return (
     <div className='flex flex-col w-full gap-20 bg-blured px-10 py-32 rounded-xl'>
       <h2 className="text-center text-6xl sm:text-[80px] font-light">OUR WEB3 USP: A GAMIFIED DAO</h2>
-      <div className="text-center flex flex-col md:flex-row w-full items-center justify-around text-2xl text-[#627BFF] gap-5">
+      <div className="text-center font-bold flex flex-col md:flex-row w-full items-center justify-around text-2xl text-[#627BFF] gap-5">
         <p className="max-w-lg">votes, contributes and upgrades membership with loyalty modules</p>
         <p className="max-w-lg">knowledge and standars to work with as well as partners and ressources to execute</p>
       </div>

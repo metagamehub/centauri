@@ -15,6 +15,7 @@ import Partners from '../sections/home/partners.section'
 import Ecosystem from '../sections/home/ecosystem.section'
 import Membership from '../sections/home/membership.section'
 import Gamified from '../sections/home/gamified.section'
+import Solution from '../sections/home/solution.section'
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
       </Head>
 
       <Greet />
-      <div className='flex flex-col justify-center items-center gap-20 text-white mx-auto my-16 sm:px-10'>
+      <div className='flex flex-col justify-center items-center gap-20 text-white mx-auto my-16 sm:px-10 text-justify'>
         {/* Apply for membership section*/}
         <div className='mb-40 text-center'>
           <p className='text-5xl font-extralight my-14'>Apply for membership <span className='font-bold'>here</span></p>
@@ -48,7 +49,8 @@ export default function Home() {
           <CurrentChallenges />
         </div>
 
-        {/*  */}
+        {/* CENTAURI WEB3 CONSORTIUM SOLUTION */}
+        <Solution />
 
         {/* OUR WEB3 USP: A GAMIFIED DAO section */}
         <Gamified />

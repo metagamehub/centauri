@@ -24,7 +24,7 @@ const Education: NextPage = () => {
       {/* greet on education view */}
       <Greet />
 
-      <div className='flex flex-col justify-center items-center gap-32 text-white mx-auto my-16 px-10'>
+      <div className='flex flex-col justify-center items-center gap-32 text-white mx-auto my-16 px-10 text-justify'>
         {/* Seminars section */}
         <Seminar />
         {/* Key features */}
