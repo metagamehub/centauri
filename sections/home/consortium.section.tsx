@@ -1,8 +1,8 @@
 const ItemPrinter = ({ title, description }: { title: string, description: string }) => {
   return (
     <div>
-      <h3 className='font-bold'>{title}</h3>
-      <p className="font-extralight">{description}</p>
+      <h3 className='font-black'>{title}</h3>
+      <p className="font-normal">{description}</p>
     </div>
   )
 }

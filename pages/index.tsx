@@ -14,6 +14,7 @@ import Partners from '../sections/home/partners.section'
 import Ecosystem from '../sections/home/ecosystem.section'
 import Membership from '../sections/home/membership.section'
 import Button from '../components/button.component'
+import Gamified from '../sections/home/gamified.section'
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       </Head>
 
       <Greet />
-      <div className='flex flex-col justify-center items-center gap-20 max-w-[100rem] text-white mx-auto my-16 px-10'>
+      <div className='flex flex-col justify-center items-center gap-20 text-white mx-auto my-16 px-10'>
         {/* Apply for membership section*/}
         <div className='mb-40 text-center'>
           <p className='text-5xl font-extralight my-14'>Apply for membership <span className='font-bold'>here</span></p>
@@ -49,7 +50,8 @@ export default function Home() {
 
         {/*  */}
 
-        {/*  */}
+        {/* OUR WEB3 USP: A GAMIFIED DAO section */}
+        <Gamified />
 
         {/* Three holes section */}
         <div className='relative flex flex-col gap-40 my-40 justify-center items-center'>
