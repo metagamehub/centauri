@@ -3,6 +3,7 @@ import Head from 'next/head'
 // Components
 import Footer from '../components/footer.component'
 import Greet from '../components/home/greet.component'
+import Button from '../components/button.component'
 
 // Sections
 import Consortium from '../sections/home/consortium.section'
@@ -13,7 +14,6 @@ import WhoAreWe from '../sections/home/whoAreWe.section'
 import Partners from '../sections/home/partners.section'
 import Ecosystem from '../sections/home/ecosystem.section'
 import Membership from '../sections/home/membership.section'
-import Button from '../components/button.component'
 import Gamified from '../sections/home/gamified.section'
 
 export default function Home() {

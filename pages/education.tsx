@@ -1,9 +1,9 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 
 // Components
 import Footer from '../components/footer.component'
+import Greet from '../components/education/greet.component'
 
 // Sections
 import Seminar from '../sections/education/seminars.section'
@@ -22,24 +22,9 @@ const Education: NextPage = () => {
       </Head>
 
       {/* greet on education view */}
-      <div className='w-full h-screen relative flex justify-center items-center'>
-        <div className='relative flex flex-col justify-center items-center h-fit text-center'>
-          <Image src={'/icons/metanode-dao.svg'} alt={'mgh logo with text'} width={182} height={160} className='absolute -top-48' />
-          <h1 className='text-4xl font-normal tracking-wide leading-tight'>CENTAURI WEB3 CONSORTIUM<br />
-            <span className="text-[5.25rem] font-bold">{'THE METANODE'}</span>
-          </h1>
-        </div>
+      <Greet />
 
-        {/* Powered by metagamehub */}
-        <div className='absolute bottom-8 lg:bottom-24 font-thin'>
-          <p className='text-center text-2xl'>{'powered by'}</p>
-          <div className='h-20 w-96'>
-            <Image src={'/mgh_logo_text.svg'} fill={true} alt={'mgh logo with text'} />
-          </div>
-        </div>
-      </div>
-
-      <div className='flex flex-col justify-center items-center gap-32 max-w-[100rem] text-white mx-auto my-16 px-10'>
+      <div className='flex flex-col justify-center items-center gap-32 text-white mx-auto my-16 px-10'>
         {/* Seminars section */}
         <Seminar />
         {/* Key features */}
