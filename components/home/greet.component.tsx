@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import PowerByMetagamehub from '../powerByMgh.component'
 
 const Greet = () => {
@@ -22,9 +23,12 @@ const Greet = () => {
       </div>
 
       {/* Main */}
-      <div className='flex flex-col justify-center items-center relative h-fit text-center'>
+      <Link
+        href='/education'
+        className='flex flex-col justify-center items-center relative h-fit text-center'
+      >
         <h1 className='text-5xl sm:text-8xl tracking-wide font-light'>Enter the <br /><span className="font-semibold">{'METANODE'}</span></h1>
-      </div>
+      </Link>
 
       {/* Powered by metagamehub */}
       <PowerByMetagamehub />
