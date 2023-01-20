@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
 
       <Greet />
-      <div className='flex flex-col justify-center items-center gap-20 text-white mx-auto my-16 px-10'>
+      <div className='flex flex-col justify-center items-center gap-20 text-white mx-auto my-16 sm:px-10'>
         {/* Apply for membership section*/}
         <div className='mb-40 text-center'>
           <p className='text-5xl font-extralight my-14'>Apply for membership <span className='font-bold'>here</span></p>

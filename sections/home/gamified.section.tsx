@@ -54,7 +54,7 @@ const Gamified = () => {
       </div>
 
       {/* Horizontal Graph */}
-      <div className="w-full flex flex-col xl:flex-row justify-center scale-[.60] sm:scale-100 xl:items-start xl:scale-75 2xl:scale-95">
+      <div className="w-full flex flex-col xl:flex-row justify-center scale-75 sm:scale-100 xl:items-start xl:scale-75 2xl:scale-95">
         {/* Initial 2 circles */}
         <div className="flex flex-col xl:flex-row">
           <Circle label="Individual/ Planet" />
