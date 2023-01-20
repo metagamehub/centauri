@@ -11,7 +11,7 @@ const KeyFeatures = () => {
   ]
 
   return (
-    <div className='relative flex flex-col lg:flex-row justify-center items-center bg-blured p-20 gap-20 min-w-[500px]'>
+    <div className='relative w-full flex flex-col lg:flex-row justify-center items-center bg-blured p-20 gap-20 min-w-[500px]'>
       <div className="absolute w-[181px] h-[181px] bg-blured-floating rounded-full -top-[90px] left-20 flex justify-center items-center">
         <Image src={`/icons/target-shooting.svg`} alt={`shooting target icon`} width={102} height={102} />
       </div>
