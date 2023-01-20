@@ -4,6 +4,7 @@ import Head from 'next/head'
 // Components
 import Footer from '../components/footer.component'
 import Greet from '../components/education/greet.component'
+import LargeBackground from '../components/education/largeBackground.component'
 
 // Sections
 import Seminar from '../sections/education/seminars.section'
@@ -21,22 +22,28 @@ const Education: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* greet on education view */}
-      <Greet />
+      <div className='relative'>
+        {/* Large Background */}
+        <LargeBackground />
 
-      <div className='flex flex-col justify-center items-center gap-32 text-white mx-auto my-16 px-10 text-justify'>
-        {/* Seminars section */}
-        <Seminar />
-        {/* Key features */}
-        <KeyFeatures />
+        {/* greet on education view */}
+        <Greet />
 
-        {/* Join the revolution */}
-        <Invitation />
-        {/* The Next level section */}
-        <NextLevel />
+        <div className='flex flex-col justify-center items-center gap-32 text-white mx-auto my-16 px-10 text-justify'>
+          {/* Seminars section */}
+          <Seminar />
+          {/* Key features */}
+          <KeyFeatures />
 
-        {/* The Agenda */}
-        <Agenda />
+          {/* Join the revolution */}
+          <Invitation />
+          {/* The Next level section */}
+          <NextLevel />
+
+          {/* The Agenda */}
+          <Agenda />
+        </div>
+
       </div>
       <Footer />
     </div>
