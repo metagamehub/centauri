@@ -4,10 +4,10 @@ const Circle = ({ label }: { label: string }) => {
   return <div className="w-[221px] h-[221px] flex justify-center items-center text-center font-bold text-3xl rounded-full bg-white bg-opacity-5 border-t-2 border-l-2 border-white border-opacity-20">{label}</div>
 }
 
-const Rectangle = ({ label }: { label: string }) => {
+const Rectangle = ({ label, hfull }: { label: string, hfull?: boolean }) => {
   return (
-    <div className="w-full h-[221px] flex justify-center items-center">
-      <div className="w-full h-fit flex justify-center items-center text-center font-bold text-3xl rounded-xl bg-white bg-opacity-5 border-t-2 border-l-2 border-white border-opacity-20 p-5">{label}</div>
+    <div className={`w-full ${hfull ? 'h-[221px]' : ''} xl:h-[221px] flex justify-center items-center`}>
+      <div className="w-full h-full xl:h-fit flex justify-center items-center text-center font-bold text-3xl rounded-xl bg-white bg-opacity-5 border-t-2 border-l-2 border-white border-opacity-20 p-5">{label}</div>
     </div>
   )
 }
@@ -36,9 +36,10 @@ const Arrow = ({ direction, fullHeigh }: {
   }, [])
 
   return (
-    <div className={`relative w-fit ${fullHeigh ? 'h-[221px]' : 'h-[10px]'} flex justify-center items-center px-5 origin-center ${rotateGrades}`}>
-      <div className="w-8 border-2" />
-      <div className="absolute origin-center rotate-45 border-t-[3px] border-r-[3px] w-4 h-4 right-5" />
+    <div className={`relative w-full xl:w-fit ${fullHeigh ? 'h-[221px]' : 'h-[50px]'} flex justify-center items-center px-5 origin-center ${rotateGrades}`}>
+      <div className="relative w-8 border-2">
+        <div className="absolute origin-center rotate-45 border-t-[3px] border-r-[3px] w-4 h-4 right-0 -top-2" />
+      </div>
     </div>
   )
 }
@@ -46,29 +47,40 @@ const Arrow = ({ direction, fullHeigh }: {
 const Gamified = () => {
   return (
     <div className='flex flex-col w-full gap-20 bg-blured px-10 py-32 rounded-xl'>
-      <h2 className="text-center text-[80px] font-light">OUR WEB3 USP: A GAMIFIED DAO</h2>
-      <div className="text-center flex w-full justify-around text-2xl text-[#627BFF]">
+      <h2 className="text-center text-6xl sm:text-[80px] font-light">OUR WEB3 USP: A GAMIFIED DAO</h2>
+      <div className="text-center flex flex-col md:flex-row w-full items-center justify-around text-2xl text-[#627BFF] gap-5">
         <p className="max-w-lg">votes, contributes and upgrades membership with loyalty modules</p>
         <p className="max-w-lg">knowledge and standars to work with as well as partners and ressources to execute</p>
       </div>
 
       {/* Horizontal Graph */}
-      <div className="w-full flex justify-center">
-        <Circle label="Individual/ Planet" />
-        <Arrow direction="right" fullHeigh />
-        <Circle label="Avatar membership" />
-        <Arrow direction="right" fullHeigh />
-        <div className="flex flex-col justify-center items-center">
-          <Rectangle label="The Metanode Token Gated Platform" />
-          <Arrow direction="bottom" fullHeigh={false} />
-          <div className="w-full flex gap-2">
+      <div className="w-full flex flex-col xl:flex-row justify-center scale-[.60] sm:scale-100 xl:items-start xl:scale-75 2xl:scale-95">
+        {/* Initial 2 circles */}
+        <div className="flex flex-col xl:flex-row">
+          <Circle label="Individual/ Planet" />
+          <div className="hidden xl:block"><Arrow direction="right" fullHeigh /></div>
+          <div className="block xl:hidden w-[221px]"><Arrow direction="bottom" fullHeigh={false} /></div>
+          <Circle label="Avatar membership" />
+          <div className="hidden xl:block"><Arrow direction="right" fullHeigh /></div>
+          <div className="block xl:hidden w-[221px]"><Arrow direction="bottom" fullHeigh={false} /></div>
+        </div>
+
+        {/* Rectangles */}
+        <div className="flex xl:flex-col justify-center items-center">
+          <Rectangle label="The Metanode Token Gated Platform" hfull />
+          <div className="hidden xl:block"><Arrow direction="bottom" fullHeigh={false} /></div>
+          <div className="block xl:hidden"><Arrow direction="right" fullHeigh /></div>
+          <div className="w-full flex flex-col xl:flex-row gap-2">
             <Rectangle label="Educating" />
             <Rectangle label="Standardizing" />
             <Rectangle label="Enabling" />
           </div>
         </div>
-        <Arrow direction="right" fullHeigh />
-        <Circle label="Individual/ Planet" />
+        <div className="hidden xl:block"><Arrow direction="right" fullHeigh /></div>
+        <div className="block xl:hidden w-[221px]"><Arrow direction="bottom" fullHeigh={false} /></div>
+        <div className="flex flex-col xl:flex-row">
+          <Circle label="Individual/ Planet" />
+        </div>
       </div>
     </div>
   )
