@@ -1,6 +1,6 @@
 const MainGoal = () => {
   return (
-    <div className='w-full grid lg:grid-cols-2 gap-28 my-36'>
+    <div className='w-full grid lg:grid-cols-2 gap-28 my-36 sm:px-16'>
       <div className='w-full'>
         <h2 className='text-center text-8xl xl:text-[7.25rem] font-extralight leading-none'>{'THE MAIN GOAL'}</h2>
       </div>

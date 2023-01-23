@@ -1,6 +1,6 @@
 const WhoAreWe = () => {
   return (
-    <div className='w-full grid lg:grid-cols-2 justify-center items-center gap-28'>
+    <div className='w-full grid lg:grid-cols-2 justify-center items-center gap-28 sm:px-16'>
       <div className='relative flex justify-center items-center h-[421px]'>
         <div className='absolute w-[250px] h-[250px] lg:w-[421px] lg:h-[421px] rounded-full bg-[#F3DE6B] blur-[100px]' />
         <div className='absolute w-[250px] h-[250px] lg:w-[421px] lg:h-[421px] rounded-full bg-black' />

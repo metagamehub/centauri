@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Ecosystem = () => {
   return (
-    <div className="relative grid 2xl:grid-cols-2 gap-20 w-full justify-items-center">
+    <div className="relative flex flex-wrap justify-center items-center gap-20 w-full">
       {/* Main sections */}
       <p className=' p-20 mx-0 text-4xl md:text-7xl mt-36 rounded-xl text-center gm-medium gm-border'>
         CENTAURI<br />

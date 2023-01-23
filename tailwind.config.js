@@ -8,6 +8,11 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  i18n: {
+    locales: ['de-DE', 'en-US', 'fr-FR', 'nl-NL', 'it-IT'],
+    defaultLocale: 'en-US',
+    localDetection: true,
+  },
   theme: {
     extend: {
       colors: {
