@@ -9,12 +9,12 @@ const Membership = () => {
   ]
   return (
     <div className="w-full flex flex-col gap-36 xl:gap-0 xl:flex-row items-center 2xl:justify-center mb-44">
-      <h2 className="text-5xl sm:text-7xl font-normal max-w-2xl text-center xl:text-left">YOUR CUSTOM CONSORTIUM MEMBERSHIP:</h2>
+      <h2 className="text-4xl sm:text-7xl font-normal max-w-2xl text-center xl:text-left">YOUR CUSTOM CONSORTIUM MEMBERSHIP:</h2>
       <div className="relative flex flex-col justify-center items-center max-w-2xl">
 
         <div className='w-full h-full gm-medium gm-border px-10 sm:px-28 py-16'>
-          <h3 className="text-5xl font-bold my-16 text-center sm:text-left">WEB3 ORATOR</h3>
-          <ul className="list-disc text-2xl">
+          <h3 className="text-3xl sm:text-5xl font-bold my-16 text-center sm:text-left">WEB3 ORATOR</h3>
+          <ul className="list-disc text-lg sm:text-2xl">
             {oratorList.map((item, index) => <li key={index}>{item}</li>)}
           </ul>
         </div>

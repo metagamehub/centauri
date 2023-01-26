@@ -47,8 +47,8 @@ const Arrow = ({ direction, fullHeigh }: {
 const Gamified = () => {
   return (
     <div className='flex flex-col w-full gap-20 px-10 py-32 rounded-xl gm-soft gm-border'>
-      <h2 className="text-center text-6xl sm:text-[80px] font-light">OUR WEB3 USP: A GAMIFIED DAO</h2>
-      <div className="text-center font-bold flex flex-col md:flex-row w-full items-center justify-around text-2xl text-[#627BFF] gap-5">
+      <h2 className="text-center text-4xl sm:text-[80px] font-light sm:leading-none">OUR WEB3 USP: A GAMIFIED DAO</h2>
+      <div className="text-center font-bold flex flex-col md:flex-row w-full items-center justify-around text-xl sm:text-2xl text-[#627BFF] gap-5">
         <p className="max-w-lg">votes, contributes and upgrades membership with loyalty modules</p>
         <p className="max-w-lg">knowledge and standars to work with as well as partners and ressources to execute</p>
       </div>

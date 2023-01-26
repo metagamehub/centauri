@@ -26,10 +26,10 @@ const Consortium = () => {
   return (
     <div className='flex flex-col gap-20 px-10 lg:px-[182px] py-32 rounded-xl mx-0 gm-soft gm-border'>
       <div className='flex justify-end'>
-        <h2 className='max-w-4xl text-5xl sm:text-7xl md:text-[5.25rem] font-light leading-none text-left'>{'THE CENTAURI WEB3 CONSORTIUM'}</h2>
+        <h2 className='max-w-4xl text-3xl md:text-6xl font-light leading-none text-left'>{'THE CENTAURI WEB3 CONSORTIUM'}</h2>
       </div>
 
-      <div className='flex flex-col max-w-2xl text-2xl gap-5'>
+      <div className='flex flex-col max-w-2xl text-xl md:text-2xl gap-5'>
         {items.map((item, index) => <ItemPrinter title={item.title} description={item.description} key={index} />)}
       </div>
 
