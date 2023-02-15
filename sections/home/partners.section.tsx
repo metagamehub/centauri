@@ -3,7 +3,7 @@ import Image from 'next/image'
 const PartnerCard = ({ logo, description }: { logo: string, description: string }) => {
   return (
     <div className="flex flex-col justify-center items-center w-80">
-      <div className='relative w-full h-40 mb-10'>
+      <div className='relative w-56 sm:w-full h-28 sm:h-40 mb-10'>
         <Image src={`/partners/${logo}.svg`} fill={true} alt={`${logo} logo`} />
       </div>
       <p className='w-full text-center text-lg font-light leading-tight'>{description}</p>

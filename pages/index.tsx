@@ -27,9 +27,9 @@ export default function Home() {
       </Head>
 
       <Greet />
-      <div className='flex flex-col justify-center items-center gap-20 text-white mx-auto my-16 sm:px-10 text-justify'>
+      <div className='flex flex-col justify-center items-center gap-20 text-white mx-auto my-16 lg:text-justify md:px-20'>
         {/* Apply for membership section*/}
-        <div className='mb-40 text-center'>
+        <div className='mb-40 text-center '>
           <p className='text-5xl font-extralight my-14'>Apply for membership <span className='font-bold'>here</span></p>
           <Button label='Click here to apply' handleClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdI7VaZN5Yc-6C7dhCw1oELcfU6K60Wg6X1HFD8MkjN97KqNA/viewform', '_blank')} />
         </div>

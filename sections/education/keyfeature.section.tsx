@@ -11,11 +11,10 @@ const KeyFeatures = () => {
   ]
 
   return (
-    <div className='relative w-full min-w-[500px]'>
-
-      <div className='w-full h-full flex flex-col lg:flex-row justify-center items-center gm-soft gm-border p-20 gap-20'>
-        <h2 className='lg:w-1/2 pt-10 lg:pt-0 text-6xl font-medium text-left'>Key features of our seminars include:</h2>
-        <ul className='lg:w-1/2 text-2xl font-light list-disc'>
+    <div className='relative w-full'>
+      <div className='w-full h-full flex flex-col lg:flex-row justify-center items-center gm-soft gm-border p-10 gap-20'>
+        <h2 className='lg:w-1/2 pt-10 lg:pt-0 text-4xl sm:text-6xl font-medium text-left'>Key features of our seminars include:</h2>
+        <ul className='lg:w-1/2 text-xl sm:text-2xl font-light list-disc list-inside'>
           {featureList.map((feature, index) => <li key={index} className="">{feature}</li>)}
         </ul>
 

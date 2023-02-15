@@ -41,19 +41,15 @@ const ElbowArrow = () => {
   )
 }
 
-const Rectangle = () => {
-
-}
-
 const Solution = () => {
   return (
-    <div className='w-full flex flex-col 2xl:flex-row gap-20 px-10 sm:px-0 justify-around items-center mb-40'>
-      <h2 className='w-fit text-7xl font-normal text-center 2xl:text-left'>CENTAURI<br />WEB3<br />CONSORTIUM<br />
-        <span className="text-8xl font-bold text-[#627BFF]">SOLUTION</span>
+    <div className='w-full flex flex-col 2xl:flex-row md:gap-20 px-10 sm:px-0 justify-around items-center md:mb-40'>
+      <h2 className='w-fit text-4xl sm:text-7xl font-normal text-center 2xl:text-left'>CENTAURI<br />WEB3<br />CONSORTIUM<br />
+        <span className="text-5xl sm:text-8xl font-bold text-[#627BFF]">SOLUTION</span>
       </h2>
 
       {/* Graph */}
-      <div className='relative w-[900px] h-[800px] flex justify-center items-center scale-[.45] sm:scale-75 lg:scale-100'>
+      <div className='relative w-[900px] h-[800px] flex justify-center items-center scale-[.35] sm:scale-75 lg:scale-100'>
         <div className='absolute top-0 left-0'><Cards label='INDIVIDUALS' imageUrl='test-image-1' /></div>
         <div className='absolute left-28'><ElbowArrow /></div>
         <div className='absolute top-16 '>
